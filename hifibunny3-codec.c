@@ -157,94 +157,94 @@ static int hifibunny3_codec_hw_params(struct snd_pcm_substream *substream, struc
 	switch(params_rate(params))
 	{
 		case 8000:
-			snd_soc_write(codec, ES9038Q2M_NCO_0, 0xAB);
-			snd_soc_write(codec, ES9038Q2M_NCO_1, 0xAA);
-			snd_soc_write(codec, ES9038Q2M_NCO_2, 0x0A);
+			snd_soc_write(codec, ES9038Q2M_NCO_0, 0x2D);
+			snd_soc_write(codec, ES9038Q2M_NCO_1, 0x3E);
+			snd_soc_write(codec, ES9038Q2M_NCO_2, 0x05);
 			snd_soc_write(codec, ES9038Q2M_NCO_3, 0x00);
 			break;
 		case 11025:
-			snd_soc_write(codec, ES9038Q2M_NCO_0, 0x33);
-			snd_soc_write(codec, ES9038Q2M_NCO_1, 0xB3);
-			snd_soc_write(codec, ES9038Q2M_NCO_2, 0x0E);
+			snd_soc_write(codec, ES9038Q2M_NCO_0, 0xB0);
+			snd_soc_write(codec, ES9038Q2M_NCO_1, 0x39);
+			snd_soc_write(codec, ES9038Q2M_NCO_2, 0x07);
 			snd_soc_write(codec, ES9038Q2M_NCO_3, 0x00);
 			break;
 		case 16000:
-			snd_soc_write(codec, ES9038Q2M_NCO_0, 0x55);
-			snd_soc_write(codec, ES9038Q2M_NCO_1, 0x55);
-			snd_soc_write(codec, ES9038Q2M_NCO_2, 0x15);
+			snd_soc_write(codec, ES9038Q2M_NCO_0, 0x5B);
+			snd_soc_write(codec, ES9038Q2M_NCO_1, 0x7C);
+			snd_soc_write(codec, ES9038Q2M_NCO_2, 0x0A);
 			snd_soc_write(codec, ES9038Q2M_NCO_3, 0x00);
 			break;
 		case 22050:
-			snd_soc_write(codec, ES9038Q2M_NCO_0, 0x66);
-			snd_soc_write(codec, ES9038Q2M_NCO_1, 0x66);
-			snd_soc_write(codec, ES9038Q2M_NCO_2, 0x1D);
+			snd_soc_write(codec, ES9038Q2M_NCO_0, 0x60);
+			snd_soc_write(codec, ES9038Q2M_NCO_1, 0x73);
+			snd_soc_write(codec, ES9038Q2M_NCO_2, 0x0E);
 			snd_soc_write(codec, ES9038Q2M_NCO_3, 0x00);
 			break;
 		case 32000:
-			snd_soc_write(codec, ES9038Q2M_NCO_0, 0xAB);
-			snd_soc_write(codec, ES9038Q2M_NCO_1, 0xAA);
-			snd_soc_write(codec, ES9038Q2M_NCO_2, 0x2A);
+			snd_soc_write(codec, ES9038Q2M_NCO_0, 0xB6);
+			snd_soc_write(codec, ES9038Q2M_NCO_1, 0xF8);
+			snd_soc_write(codec, ES9038Q2M_NCO_2, 0x14);
 			snd_soc_write(codec, ES9038Q2M_NCO_3, 0x00);
 			break;
 		case 44100:
-			snd_soc_write(codec, ES9038Q2M_NCO_0, 0xCD);
-			snd_soc_write(codec, ES9038Q2M_NCO_1, 0xCC);
-			snd_soc_write(codec, ES9038Q2M_NCO_2, 0x3A);
+			snd_soc_write(codec, ES9038Q2M_NCO_0, 0xC1);
+			snd_soc_write(codec, ES9038Q2M_NCO_1, 0xE6);
+			snd_soc_write(codec, ES9038Q2M_NCO_2, 0x1C);
 			snd_soc_write(codec, ES9038Q2M_NCO_3, 0x00);
 			break;
 		case 48000:
-			snd_soc_write(codec, ES9038Q2M_NCO_0, 0x00);
-			snd_soc_write(codec, ES9038Q2M_NCO_1, 0x00);
-			snd_soc_write(codec, ES9038Q2M_NCO_2, 0x40);
+			snd_soc_write(codec, ES9038Q2M_NCO_0, 0x10);
+			snd_soc_write(codec, ES9038Q2M_NCO_1, 0x75);
+			snd_soc_write(codec, ES9038Q2M_NCO_2, 0x1F);
 			snd_soc_write(codec, ES9038Q2M_NCO_3, 0x00);
 			break;
 		case 88200:
-			snd_soc_write(codec, ES9038Q2M_NCO_0, 0x9A);
-			snd_soc_write(codec, ES9038Q2M_NCO_1, 0x99);
-			snd_soc_write(codec, ES9038Q2M_NCO_2, 0x75);
+			snd_soc_write(codec, ES9038Q2M_NCO_0, 0x81);
+			snd_soc_write(codec, ES9038Q2M_NCO_1, 0xCD);
+			snd_soc_write(codec, ES9038Q2M_NCO_2, 0x39);
 			snd_soc_write(codec, ES9038Q2M_NCO_3, 0x00);
 			break;
 		case 96000:
-			snd_soc_write(codec, ES9038Q2M_NCO_0, 0x00);
-			snd_soc_write(codec, ES9038Q2M_NCO_1, 0x00);
-			snd_soc_write(codec, ES9038Q2M_NCO_2, 0x80);
+			snd_soc_write(codec, ES9038Q2M_NCO_0, 0x21);
+			snd_soc_write(codec, ES9038Q2M_NCO_1, 0xEA);
+			snd_soc_write(codec, ES9038Q2M_NCO_2, 0x3E);
 			snd_soc_write(codec, ES9038Q2M_NCO_3, 0x00);
 			break;
 		case 176400:
-			snd_soc_write(codec, ES9038Q2M_NCO_0, 0x33);
-			snd_soc_write(codec, ES9038Q2M_NCO_1, 0x33);
-			snd_soc_write(codec, ES9038Q2M_NCO_2, 0xEB);
+			snd_soc_write(codec, ES9038Q2M_NCO_0, 0x02);
+			snd_soc_write(codec, ES9038Q2M_NCO_1, 0x9B);
+			snd_soc_write(codec, ES9038Q2M_NCO_2, 0x73);
 			snd_soc_write(codec, ES9038Q2M_NCO_3, 0x00);
 			break;
 		case 192000:
-			snd_soc_write(codec, ES9038Q2M_NCO_0, 0x00);
-			snd_soc_write(codec, ES9038Q2M_NCO_1, 0x00);
-			snd_soc_write(codec, ES9038Q2M_NCO_2, 0x00);
-			snd_soc_write(codec, ES9038Q2M_NCO_3, 0x01);
+			snd_soc_write(codec, ES9038Q2M_NCO_0, 0x41);
+			snd_soc_write(codec, ES9038Q2M_NCO_1, 0xD4);
+			snd_soc_write(codec, ES9038Q2M_NCO_2, 0x7D);
+			snd_soc_write(codec, ES9038Q2M_NCO_3, 0x00);
 			break;
 		case 352800:
-			snd_soc_write(codec, ES9038Q2M_NCO_0, 0x66);
-			snd_soc_write(codec, ES9038Q2M_NCO_1, 0x66);
-			snd_soc_write(codec, ES9038Q2M_NCO_2, 0xD6);
-			snd_soc_write(codec, ES9038Q2M_NCO_3, 0x01);
+			snd_soc_write(codec, ES9038Q2M_NCO_0, 0x05);
+			snd_soc_write(codec, ES9038Q2M_NCO_1, 0x36);
+			snd_soc_write(codec, ES9038Q2M_NCO_2, 0xE7);
+			snd_soc_write(codec, ES9038Q2M_NCO_3, 0x00);
 			break;
 		case 384000:
-			snd_soc_write(codec, ES9038Q2M_NCO_0, 0x00);
-			snd_soc_write(codec, ES9038Q2M_NCO_1, 0x00);
-			snd_soc_write(codec, ES9038Q2M_NCO_2, 0x00);
-			snd_soc_write(codec, ES9038Q2M_NCO_3, 0x02);
+			snd_soc_write(codec, ES9038Q2M_NCO_0, 0x82);
+			snd_soc_write(codec, ES9038Q2M_NCO_1, 0xA8);
+			snd_soc_write(codec, ES9038Q2M_NCO_2, 0xFB);
+			snd_soc_write(codec, ES9038Q2M_NCO_3, 0x00);
 			break;
 		case 705600:
-			snd_soc_write(codec, ES9038Q2M_NCO_0, 0xCD);
-			snd_soc_write(codec, ES9038Q2M_NCO_1, 0xCC);
-			snd_soc_write(codec, ES9038Q2M_NCO_2, 0xAC);
-			snd_soc_write(codec, ES9038Q2M_NCO_3, 0x03);
+			snd_soc_write(codec, ES9038Q2M_NCO_0, 0x09);
+			snd_soc_write(codec, ES9038Q2M_NCO_1, 0x6C);
+			snd_soc_write(codec, ES9038Q2M_NCO_2, 0xCE);
+			snd_soc_write(codec, ES9038Q2M_NCO_3, 0x01);
 			break;
 		case 768000:
-			snd_soc_write(codec, ES9038Q2M_NCO_0, 0x00);
-			snd_soc_write(codec, ES9038Q2M_NCO_1, 0x00);
-			snd_soc_write(codec, ES9038Q2M_NCO_2, 0x00);
-			snd_soc_write(codec, ES9038Q2M_NCO_3, 0x04);
+			snd_soc_write(codec, ES9038Q2M_NCO_0, 0x05);
+			snd_soc_write(codec, ES9038Q2M_NCO_1, 0x51);
+			snd_soc_write(codec, ES9038Q2M_NCO_2, 0xF7);
+			snd_soc_write(codec, ES9038Q2M_NCO_3, 0x01);
 			break;
 		default:
 			snd_soc_write(codec, ES9038Q2M_NCO_0, 0x00);
