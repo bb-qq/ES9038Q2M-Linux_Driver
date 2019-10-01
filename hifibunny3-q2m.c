@@ -32,13 +32,13 @@ struct gpio_desc *rst_gpio;
 struct gpio_desc *pwd_gpio;
 static int snd_rpi_hifibunny3_q2m_init(struct snd_soc_pcm_runtime *rtd)
 {
-	struct snd_soc_codec *codec = rtd->codec;
+	struct snd_soc_component *component = rtd->codec_dai->component;
 
 	/* Device ID */
-	dev_info(codec->dev, "Device ID : %02X\n", 3);
+	dev_info(component->card->dev, "Device ID : %02X\n", 3);
 
 	/* API revision */
-	dev_info(codec->dev, "API revision : %02X\n", 1);
+	dev_info(component->card->dev, "API revision : %02X\n", 1);
 
 	return 0;
 }
